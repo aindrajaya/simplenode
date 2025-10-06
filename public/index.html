@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Node App</title>
+    <style>
+      body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; }
+      .hero { display:flex; align-items:center; justify-content:center; height:100vh; background:linear-gradient(135deg,#667eea,#764ba2); color:white; }
+      .card { max-width:720px; padding:32px; background:rgba(255,255,255,0.06); border-radius:12px; box-shadow:0 8px 30px rgba(0,0,0,0.2); }
+      h1 { margin:0 0 12px 0; font-size:clamp(20px,4vw,36px); }
+      p { margin:0 0 16px 0; opacity:0.95 }
+      a.button { display:inline-block; padding:10px 16px; background:white; color:#3b2fbd; border-radius:8px; text-decoration:none; font-weight:600 }
+      footer { position:fixed; right:12px; bottom:12px; color:rgba(255,255,255,0.7); font-size:12px }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="card">
+        <h1>Welcome to the Simple Node App</h1>
+        <p>This example serves a static HTML page from a minimal Express server. It's ready to be deployed to Google Cloud Run or a similar container-based service.</p>
+        <p>Try the health endpoint: <code>/health</code></p>
+        <a class="button" href="/">Reload</a>
+      </div>
+    </div>
+    <footer>Running on Node.js — ready for GCP</footer>
+  </body>
+</html>
